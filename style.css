@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root{
+    --corBg: #3F394D;
+    --corDestaque: #936AE6;
+    --corfooter: #1F1B27;
+    --fontall: 'Lato', sans-serif;
+    --font:  'Kanit', sans-serif;
+}
+
+body{
+    background-color: var(--corBg);
+    font-family: var(--font); 
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--corfooter);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--corBg);  /* creates padding around scroll thumb */
+  }
+
+
+
+
+
+/* CABEÇALHO */
+
+
+
+
+
+header{
+    background: #3F394D;
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 90px 0px 90px;
+}
+.menu ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.menu ul li img{
+    height: 50px;
+    width: 50px;
+}
+.menu h1 {
+    font-size: 45px;
+    color: white;
+    padding: 20px;
+}
+.menu ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+}
+.menu h1 a{
+    color: white;
+}
+
+
+
+
+/* APRESENTAÇÃO */
+
+
+
+.apresentacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px 50px 0px 50px;
+    color: white;
+    font-size: 50px;
+    font-family: var(--font);
+}
+.apresentacao img{
+    height: 522px;
+    width: 500px;
+}
+.apresentacao > div > p:nth-child(3){
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+span{
+    color: var(--corDestaque);
+}
+
+
+
+
+/* ABOUT */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px 50px 40px 50px;
+    color: white;
+    font-size: 20px;
+    font-family: var(--font);
+}
+
+.about img{
+    height: 417px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.about div{
+    max-width: 650px;
+}
+
+.about > div > h2{
+    margin-bottom: 50px;
+    margin-top: 60px;
+    color: var(--corDestaque);
+    font-size: 40px;
+}
+
+
+/* FIND ME */
+
+
+.find-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 50px 90px 50px;
+    color: white;
+    font-size: 25px;
+    font-family: var(--font);
+}
+.find-me div{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+.find-me div img{
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+footer{
+    background-color: var(--corfooter);
+    height: 70px;
+}
