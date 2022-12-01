@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+:root{
+    --corBg: #3F394D;
+    --corDestaque: #936AE6;
+    --corfooter: #1F1B27;
+    --fontall: 'Lato', sans-serif;
+    --font:  'Kanit', sans-serif;
+}
+
+body{
+    background-color: var(--corBg);
+    font-family: var(--font); 
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--corfooter);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--corBg);  /* creates padding around scroll thumb */
+  }
+
+
+
+
+
+/* CABEÇALHO */
+
+
+
+
+
+
+header{
+    background: #3F394D;
+    mix-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 90px 0px 90px;
+}
+.menu ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.menu ul li img{
+    height: 50px;
+    width: 50px;
+}
+.menu h1 {
+    font-size: 45px;
+    color: white;
+    padding: 20px;
+}
+.menu ul li a{
+    font-size: 16px;
+    padding: 20px;
+    color: white;
+}
+.menu h1 a{
+    color: white;
+}
+
+
+
+
+/* MAIN */
+
+
+
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "tittle tittle tittle"
+    "projeto1 projeto2 projeto3";
+    gap: 30px;
+    justify-content: center;
+}
+.tittle{
+    grid-area: tittle;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.tittle span{
+    color: var(--corDestaque);
+}
+.projeto1{
+    display: flex;
+    flex-direction: column;
+    grid-area: projeto1;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0px 2px 14px 5px rgba(0, 0, 0, 0.165);
+    align-items: center;
+    color: white;
+}
+.projeto1 img{
+    width: 250px;
+    height: 127px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
+}
+.projeto1 p{
+    text-align: justify;
+    padding: 20px;
+}
+.projeto1 button {
+    background-color: var(--corDestaque);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.projeto1 button:hover {
+    background-color: #503587;
+}
+
+.projeto1 a{
+    color: white;
+}
+
+.projeto2{
+    display: flex;
+    flex-direction: column;
+    grid-area: projeto2;
+    height: 450px;
+    width: 300px;
+    box-shadow: 2px 2px 14px 5px rgba(0, 0, 0, 0.165);
+    align-items: center;
+    color: white;
+}
+.projeto2 img{
+    width: 68px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
+}
+.projeto2 p{
+    text-align: justify;
+    padding: 20px;
+}
+.projeto2 p{
+    text-align: justify;
+    padding: 20px;
+}
+.projeto2 button {
+    background-color: var(--corDestaque);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.projeto2 button:hover {
+    background-color: #503587;
+}
+
+.projeto2 a{
+    color: white;
+}
+.projeto3{
+    display: flex;
+    flex-direction: column;
+    grid-area: projeto3;
+    height: 450px;
+    width: 300px;
+    box-shadow: 0px 2px 14px 5px rgba(0, 0, 0, 0.165);
+    align-items: center;
+    color: white;
+}
+.projeto3 img{
+    width: 250px;
+    height: 127px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
+}
+.projeto3 p{
+    text-align: justify;
+    padding: 20px;
+}
+.projeto3 p{
+    text-align: justify;
+    padding: 20px;
+}
+.projeto3 button {
+    background-color: var(--corDestaque);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.projeto3 button:hover {
+    background-color: #503587;
+}
+
+.projeto3 a{
+    color: white;
+}
