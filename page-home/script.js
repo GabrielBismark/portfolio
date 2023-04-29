@@ -1,3 +1,6 @@
+const btnMenu = document.getElementById("menu");
+const menuItems = document.querySelector(".menu-itens")
+
 function initAnimacaoScroll() {
     const sections = document.querySelectorAll('.js-scroll');
 
@@ -22,3 +25,9 @@ function initAnimacaoScroll() {
     }
 }
 initAnimacaoScroll();
+
+function openMenu(){
+    menuItems.classList.toggle("active");
+}
+openMenu();
+btnMenu.addEventListener('click', openMenu)

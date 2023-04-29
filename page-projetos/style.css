@@ -53,11 +53,17 @@ header{
     mix-blend-mode: normal;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
+#menu{
+    display: none;
+   fill: white;
+}
 .menu{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0px 90px 0px 90px;
+    
 }
 .menu ul{
     display: flex;
@@ -88,13 +94,21 @@ header{
 /* MAIN */
 
 
-
+.proj1{
+    grid-area: proj1;
+}
+.proj2{
+    grid-area: proj2;
+}
+.proj3{
+    grid-area: proj3;
+}
 
 main{
     display: grid;
     grid-template-areas: 
     "tittle tittle tittle"
-    "projeto1 projeto2 projeto3";
+    "proj1 proj2 proj3";
     gap: 30px;
     justify-content: center;
 }
@@ -108,117 +122,59 @@ main{
 .tittle span{
     color: var(--corDestaque);
 }
-.projeto1{
+
+.card-project{
     display: flex;
     flex-direction: column;
-    grid-area: projeto1;
-    height: 450px;
-    width: 300px;
-    box-shadow: 0px 2px 14px 5px rgba(0, 0, 0, 0.165);
-    align-items: center;
-    color: white;
-    border-radius: 20px;
-}
-.projeto1 img{
-    width: 250px;
-    height: 127px;
-    border-radius: 20px;
-    margin-top: 10px;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
-}
-.projeto1 p{
-    text-align: justify;
-    padding: 20px;
-}
-.projeto1 button {
-    background-color: var(--corDestaque);
-    color: white;
-    border: none;
-    border-radius: 20px;
-}
-.projeto1 button:hover {
-    background-color: #503587;
-}
-
-.projeto1 a{
-    color: white;
-}
-
-.projeto2{
-    display: flex;
-    flex-direction: column;
-    grid-area: projeto2;
-    height: 450px;
-    width: 300px;
+    height: 100%;
+    width: 500px;
     box-shadow: 2px 2px 14px 5px rgba(0, 0, 0, 0.165);
     align-items: center;
     color: white;
     border-radius: 20px;
-}
-.projeto2 img{
-    width: 68px;
-    height: 150px;
-    border-radius: 20px;
-    margin-top: 10px;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
-}
-.projeto2 p{
-    text-align: justify;
-    padding: 20px;
-}
-.projeto2 p{
-    text-align: justify;
-    padding: 20px;
-}
-.projeto2 button {
-    background-color: var(--corDestaque);
-    color: white;
-    border: none;
-    border-radius: 20px;
-}
-.projeto2 button:hover {
-    background-color: #503587;
+    padding: 40px;
 }
 
-.projeto2 a{
-    color: white;
-}
-.projeto3{
-    display: flex;
-    flex-direction: column;
-    grid-area: projeto3;
-    height: 450px;
-    width: 300px;
-    box-shadow: 0px 2px 14px 5px rgba(0, 0, 0, 0.165);
-    align-items: center;
-    color: white;
-    border-radius: 20px;
-}
-.projeto3 img{
+.card-project img{
     width: 250px;
-    height: 127px;
+    height: 200px;
     border-radius: 20px;
     margin-top: 10px;
     box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.165);
 }
-.projeto3 p{
+.card-project p{
     text-align: justify;
     padding: 20px;
 }
-.projeto3 p{
-    text-align: justify;
-    padding: 20px;
-}
-.projeto3 button {
+.card-project button {
     background-color: var(--corDestaque);
     color: white;
     border: none;
     border-radius: 20px;
 }
-.projeto3 button:hover {
+.card-project button:hover {
     background-color: #503587;
 }
 
-.projeto3 a{
+.card-project a{
     color: white;
+}
+
+
+@media(max-width: 600px){
+    .menu ul{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .card-project{
+        width: 90%;
+    }
 }
