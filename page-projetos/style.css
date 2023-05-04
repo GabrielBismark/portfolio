@@ -133,6 +133,7 @@ main{
     color: white;
     border-radius: 20px;
     padding: 40px;
+    gap: 50px;
 }
 
 .card-project img{
@@ -144,13 +145,23 @@ main{
 }
 .card-project p{
     text-align: justify;
-    padding: 20px;
+}
+.card-project h3{
+    position: absolute;
+    top: 450px;
+    background-color: var(--corBg);
+    color: var(--corDestaque);
+    padding: 25px;
+    border-radius: 100px;
+    box-shadow:  2px 2px 14px 5px rgba(0, 0, 0, 0.165);
 }
 .card-project button {
     background-color: var(--corDestaque);
     color: white;
     border: none;
+    padding: 20px 40px;
     border-radius: 20px;
+    font-size: 1.2rem;
 }
 .card-project button:hover {
     background-color: #503587;
@@ -158,6 +169,91 @@ main{
 
 .card-project a{
     color: white;
+}
+
+/* OTHER PROJECTS */
+.o-tittle{
+    grid-area: o-tittle;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.o-proj1{
+    grid-area: o-proj1;
+}
+.o-proj2{
+    grid-area: o-proj2;
+}
+.o-proj3{
+    grid-area: o-proj3;
+}
+.other-projects{
+    margin-top: 7%;
+}
+.other-projects-grid{
+    display: grid;
+    grid-template-areas: 
+    "o-tittle o-tittle o-tittle"
+    "o-proj1 o-proj2 o-proj3"
+    ;
+    gap: 30px;
+    justify-content: center;
+}
+
+.o-proj1 h3{
+    position: absolute;
+    top: 1200px;
+    background-color: var(--corBg);
+    color: var(--corDestaque);
+    padding: 25px;
+    border-radius: 100px;
+    box-shadow:  2px 2px 14px 5px rgba(0, 0, 0, 0.165);
+}
+.o-proj2 h3{
+    position: absolute;
+    top: 1200px;
+    background-color: var(--corBg);
+    color: var(--corDestaque);
+    padding: 25px;
+    border-radius: 100px;
+    box-shadow:  2px 2px 14px 5px rgba(0, 0, 0, 0.165);
+}
+.o-proj3 h3{
+    position: absolute;
+    top: 1200px;
+    background-color: var(--corBg);
+    color: var(--corDestaque);
+    padding: 25px;
+    border-radius: 100px;
+    box-shadow:  2px 2px 14px 5px rgba(0, 0, 0, 0.165);
+}
+
+footer{
+    margin-top: 10%;
+    background-color: var(--corfooter);
+    position: relative;
+}
+.find-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 50px 0px 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: var(--font);
+}
+.find-me div{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+.find-me div img{
+    height: 60px;
+    width: 60px;
+}
+.dev{
+    font-size: 0.9rem;
 }
 
 
